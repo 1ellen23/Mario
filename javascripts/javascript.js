@@ -48,7 +48,7 @@ let colidiu = false;
 function teclaPressionada(event) {
     if (event.key === "ArrowRight") {
         direcao = 1;
-        personagem.style.backgroundImage = "url('../imagens/marioAndandoLadoDireito.gif')";
+        personagem.style.backgroundImage = url('../imagens/marioAndandoLadoDireito.gif');
     } else if (event.key === "ArrowLeft") {
         direcao = -1;
         personagem.style.backgroundImage = "url('../imagens/marioAndandoLadoEsquerdo.gif')";
