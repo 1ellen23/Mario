@@ -51,7 +51,7 @@ function teclaPressionada(event) {
         personagem.style.backgroundImage = 'url(./imagens/marioAndandoLadoDireito.gif)';
     } else if (event.key === "ArrowLeft") {
         direcao = -1;
-        personagem.style.backgroundImage = "url(./imagens/marioAndandoLadoEsquerdo.gif)";
+        personagem.style.backgroundImage = 'url(./imagens/marioAndandoLadoEsquerdo.gif)';
     } else if (event.code === "Space") {
         personagem.classList.add("puloPersonagem");
         audioPulo.play();
@@ -70,10 +70,10 @@ function teclaPressionada(event) {
 function teclaSolta(event) {
     if (event.key === "ArrowRight") {
         direcao = 0;
-        personagem.style.backgroundImage = "url(./imagens/marioParadoLadoDireito.png)";
+        personagem.style.backgroundImage = 'url(./imagens/marioParadoLadoDireito.png)';
     } else if (event.key === "ArrowLeft") {
         direcao = 0;
-        personagem.style.backgroundImage = "url(./imagens/marioParadoLadoEsquerdo.png)";
+        personagem.style.backgroundImage = 'url(./imagens/marioParadoLadoEsquerdo.png)';
     }
 }
 
@@ -132,7 +132,7 @@ function colisaoComInimigo() {
         vidasAtual--;
         vidas.textContent = vidasAtual;
         localStorage.setItem("vidasAtual", vidasAtual);
-        personagem.style.backgroundImage = "url(./imagens/marioMorto.gif)";
+        personagem.style.backgroundImage = 'url(./imagens/marioMorto.gif)';
         inimigo.style.display = "none";
         colidiu = true;
         audioJogoNormal.volume = 0;
@@ -181,7 +181,7 @@ function relogio() {
     } else if (tempoAtual === 0) {
         removerTeclas();
         clearInterval(checarRelogio);
-        personagem.style.backgroundImage = "url(./imagens/marioMorto.gif)";
+        personagem.style.backgroundImage ='url(./imagens/marioMorto.gif)';
         inimigo.style.display = "none";
         audioEsperando.pause();
         audioJogoNormal.pause();
